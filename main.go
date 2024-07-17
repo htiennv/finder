@@ -81,7 +81,7 @@ func SaveResult(file *os.File, w walletResult) error {
 }
 
 func GenerateWallet2() (*walletResult, error) {
-	entropy, err := bip39.NewEntropy(256)
+	entropy, err := bip39.NewEntropy(128)
 	if err != nil {
 		return nil, err
 	}
